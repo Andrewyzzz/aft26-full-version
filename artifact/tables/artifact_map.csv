@@ -1,11 +1,11 @@
 Paper object,Script,Input,Output
-Table 1 (Sample flow),experiments/validation/sample_flow.py,auctions_full_usd.parquet,sample_flow.csv
-Table 2 (Parser audit),experiments/validation/reference_score_validation.py,auctions_full.parquet,reference_score_validation.csv
-Table 3 (USD missingness),experiments/validation/usd_missingness.py,auctions_full_usd.parquet,usd_missingness.csv
-Table 4 (Fragility summary),experiments/metrics/fragility.py,auctions_full_usd.parquet,fragility_summary_usd.csv
-Table 5 (Regression),experiments/metrics/execution_quality.py,auctions_full_usd.parquet,regression_main_usd.csv
-Table 6 (HHI robustness),experiments/validation/hhi_robustness_min_auctions.py (inline),auctions_full_usd.parquet,hhi_robustness_min_auctions.csv
-Table 14 (Reserve sensitivity),experiments/validation/reserve_sensitivity.py,auctions_full_usd.parquet + params.yaml,reserve_sensitivity.csv
+Table 1 (Sample flow),artifact/scripts/validation/sample_flow.py,auctions_full_usd.parquet,sample_flow.csv
+Table 2 (Parser audit),artifact/scripts/validation/reference_score_validation.py,auctions_full.parquet,reference_score_validation.csv
+Table 3 (USD missingness),artifact/scripts/validation/usd_missingness.py,auctions_full_usd.parquet,usd_missingness.csv
+Table 4 (Fragility summary),artifact/scripts/metrics/fragility.py,auctions_full_usd.parquet,fragility_summary_usd.csv
+Table 5 (Regression),artifact/scripts/metrics/execution_quality.py,auctions_full_usd.parquet,regression_main_usd.csv
+Table 6 (HHI robustness),artifact/scripts/validation/hhi_robustness_min_auctions.py (inline),auctions_full_usd.parquet,hhi_robustness_min_auctions.csv
+Table 14 (Reserve sensitivity),artifact/scripts/validation/reserve_sensitivity.py,auctions_full_usd.parquet + params.yaml,reserve_sensitivity.csv
 Table 15 (Reserve targeting),(derived from replay),mechanical_replay.csv,reserve_targeting.csv
-Table 18 (Counterfactual),experiments/counterfactual/mechanical_replay.py,auctions_full_usd.parquet + params.yaml,counterfactual_summary_usd.csv
-App. Table (Depth diag.),experiments/validation/depth_targeted_reserve_diagnostic.py,auctions_full_usd.parquet + mechanical_replay.csv,depth_targeted_reserve.csv
+Table 18 (Counterfactual),artifact/scripts/counterfactual/mechanical_replay.py,auctions_full_usd.parquet + params.yaml,counterfactual_summary_usd.csv
+App. Table (Depth diag.),artifact/scripts/validation/depth_targeted_reserve_diagnostic.py,auctions_full_usd.parquet + mechanical_replay.csv,depth_targeted_reserve.csv

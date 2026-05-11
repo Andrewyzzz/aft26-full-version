@@ -75,7 +75,7 @@ artifact/scripts/
     replay_decomposition.py               Replay decomposition
     bluechip_paradox_check.py             Blue-chip paradox mechanism check
 
-  make_latex_tables.py       Reads results/tables/*.csv, generates paper/tables/*.tex
+  make_latex_tables.py       Reads results/tables/*.csv → generates paper/tables/*.tex (preserves original project paths; review-time aggregated outputs are in artifact/tables/)
 ```
 
 ## Parser note

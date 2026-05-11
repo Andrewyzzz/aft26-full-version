@@ -1,0 +1,4 @@
+replay_mode,n_eval,activation_rate,overall_delta_rent_usd,activated_delta_rent_usd,non_activated_delta_rent_usd,theorem1_holds_frac
+mechanical,642297,0.21027032665573714,-1.5717027558934993,-7.474676911815297,0.0,
+behavior_aware,642297,0.21027032665573714,-5.806680213134073,-8.318911948925642,-5.090240748154032,
+adversarial,642253,0.6619758880067512,,,,1.0

@@ -1,0 +1,6 @@
+step,n,used_for,filter
+1. Main auction sample,802816,"fragility, N_comp, HHI",Parsed post-CIP-67 auctions
+2. Score-to-USD sample,680839,solver_rent_usd regression,score+fragility+controls non-null
+3. USD notional sample,493653,score_gap_bps regression,score_gap_bps non-null
+4. Sane-volume denominator,318469,economic scale bps,"volume_usd in [$1,$10M]"
+5. Replay eval sample,642252,counterfactual replay,First 20% warm-up excluded

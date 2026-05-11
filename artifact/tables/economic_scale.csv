@@ -1,0 +1,11 @@
+metric,value
+sample_auctions,802816.0
+sample_days,244.0
+covered_auctions,318469.0
+covered_notional_usd,54687496527.88217
+total_accounting_gap_usd,5125642.931491047
+gap_per_covered_notional_bps,0.9372604812651757
+fragile_auction_gap_usd,1902762.1186423881
+fragile_gap_share,0.3712240872168744
+daily_gap_usd,21006.73332578298
+annualized_gap_usd,7667457.6639107885

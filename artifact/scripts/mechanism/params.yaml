@@ -1,0 +1,42 @@
+# Shadow-Reserve Auction Parameters
+# Section 5.5: Parameter Selection Principles
+# Theorem 4 constraint: tau > alpha (attacker's share of history window)
+
+reserve:
+  # History window: number of auctions to include in benchmark
+  L: 200
+  # Delay window: exclude most recent H auctions (prevents bid manipulation)
+  H: 10
+  # Min competitive solvers required for sample to be benchmark-eligible
+  k: 2
+  # Robust quantile — must be > alpha (assumed alpha <= 0.20)
+  tau: 0.25
+  # Smoothing rate (how fast reserve responds to new data)
+  eta: 0.10
+  # Maximum downward rate per period (anti-manipulation core, Theorem 4)
+  delta_down: 0.05
+  # Maximum upward rate per period
+  delta_up: 0.10
+  # Winsorization bounds for benchmark samples
+  winsor_lo: 0.05
+  winsor_hi: 0.95
+
+auction:
+  # Mode: hard | soft | fallback
+  mode: hard
+  # Epsilon for behavior-aware replay ("beat reserve by at least epsilon")
+  beat_epsilon: 1.0e-6
+
+evaluation:
+  # Warm-up fraction of dataset for initializing reserve states
+  init_frac: 0.20
+  # Behavior-aware: assumed solver execution cost buffer
+  solver_cost_kappa: 0.0
+
+robustness:
+  # Epsilon values for N_competitive sensitivity
+  epsilon_competitive: [0.01, 0.03, 0.05, 0.10]
+  # Reserve tau values for sensitivity
+  tau_values: [0.10, 0.20, 0.25, 0.30, 0.40]
+  # Delta_down values
+  delta_down_values: [0.02, 0.05, 0.10, 0.20]

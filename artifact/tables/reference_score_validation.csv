@@ -1,0 +1,13 @@
+check,value
+main_sample_auctions,802816
+auctions_with_non_winning_solver,680839
+share_with_non_winning_solver,0.8480635662468112
+share_no_non_winning_solver,0.15193643375318877
+share_score2_solution_equals_score2_other,0.8815805863360969
+share_affected_by_old_parser,0.11841941366390307
+n_auctions_affected,95069
+median_abs_diff_affected_wei,177088911373776.0
+fragility_median_abs_change_affected,0.05140274779706888
+fragility_mean_abs_change_affected,0.17623010335108272
+current_parser_uses_score2_other,Yes
+fragility_direction_of_bias,Old parser UNDERESTIMATES fragility
